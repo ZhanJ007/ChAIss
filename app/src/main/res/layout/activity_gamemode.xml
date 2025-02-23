@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#852221"
+    tools:context=".GameMode">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/joti_one"
+        android:text="Select Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- 2D Chess Button -->
+    <Button
+        android:id="@+id/button_2d"
+        android:layout_width="205dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:background="#090808"
+        android:fontFamily="@font/joti_one"
+        android:text="2D Chess"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- 3D Chess Button -->
+    <Button
+        android:id="@+id/button_3d"
+        android:layout_width="205dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="30dp"
+        android:background="#090808"
+        android:fontFamily="@font/joti_one"
+        android:text="3D Chess"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:enabled="true"
+        android:alpha="0.5"
+        app:layout_constraintTop_toBottomOf="@id/button_2d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="205dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        android:background="#090808"
+        android:fontFamily="@font/joti_one"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/button_3d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Back Arrow Image Button -->
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="68dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#852221"
+        app:srcCompat="@drawable/ic_back_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

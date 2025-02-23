@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#852221">
+
+    <!-- CHAISS LOGO -->
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/welcome_image" />
+
+    <!-- "CHAISS" -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHAISS"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome_image"
+        android:fontFamily="@font/joti_one"
+        android:layout_marginTop="25dp"/>
+
+
+    <!-- "AI CHESS" -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI CHESS"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/joti_one"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/title"/>
+
+    <!-- "Tap screen to continue..." -->
+    <TextView
+        android:id="@+id/tap_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap screen to continue..."
+        android:textSize="26sp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/joti_one"
+        android:layout_marginBottom="30dp"/>
+</RelativeLayout>
